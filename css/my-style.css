@@ -4,7 +4,6 @@ h1 {
 
 .background-image {
   /*background-image: url('img/whitebackground.jpg');*/
-  background-color: black !important;
   z-index: -2222;
 }
 
