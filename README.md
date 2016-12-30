@@ -6,7 +6,7 @@
 
 ## Description
 
-_This portfolio will include some of my best coding and links to the websites that I have built. I will continue to add to this portfolio as I improve my coding. See more information on GitHub at https://github.com/KatyCodes/portfolio_
+_This portfolio will include some of my best coding and links to the websites that I have built. I will continue to add to this portfolio as I improve my coding. See more information on GitHub at https:///katycodes.github.io/_
 
 ## Setup/Installation Requirements
 
