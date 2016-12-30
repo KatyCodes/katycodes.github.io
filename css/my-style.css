@@ -1,0 +1,115 @@
+h1 {
+  font-family:monospace!important;
+}
+
+.background-image {
+  /*background-image: url('img/whitebackground.jpg');*/
+  background-color: black !important;
+  z-index: -2222;
+}
+
+h1 img {
+  border: 2px solid $('.style').show("slow");
+  max-height: 600px;
+  padding: 2px;
+
+}
+
+p {
+  font-size: 17px;
+}
+
+li {
+  font-size: 16px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+#profile {
+  max-height: 700px;
+  padding: 50px;
+}
+
+#photo5 {
+  max-height: 700px;
+  min-width: 700px;
+  padding: 50px;
+}
+
+#photo6 {
+  max-height: 700px;
+  min-width: 700px;
+  padding: 50px;
+}
+
+#img2 {
+  float: right;
+  max-height:500px;
+  padding: 20px;
+  border: 20px solid #5FC4AB;
+}
+
+.style {
+  display: none;
+}
+
+.aboutme {
+  display: none;
+}
+
+.intro {
+  /*display: none;*/
+}
+
+#style:hover {
+  background-color: #F8F8F8;
+}
+
+.jumbotron {
+  margin: 20px;
+}
+
+.navbar{
+  padding: 20px;
+  font-family: monospace;
+}
+
+.container-fluid {
+  font-family: monospace;
+  max-width: 1500px;
+}
+.col-sm-4 {
+  border: 2px solid black!important;
+  min-height: 425px!important;
+  text-align: center;
+  padding: 40px;
+  font-size: 150%;
+}
+
+.row {
+  padding: 20px;
+}
+.navbar .nav li a,#style{
+  background-color: #5FC4AB;
+}
+
+#style: {
+  background-color: F8F8F8;
+}
+
+#home.active, #contract.active, #style.active {
+  background-color: #5FC4AB;
+}
+
+.katy::after {
+  content: 'Katy';
+  /*display: none;*/
+}
+
+.glyphicon {
+  padding: 20px;
+}
