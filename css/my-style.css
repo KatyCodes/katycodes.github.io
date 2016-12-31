@@ -24,7 +24,6 @@ li {
 
 h2 {
   text-align: center;
-  text-decoration: underline;
 }
 
 
@@ -53,7 +52,7 @@ h2 {
 }
 
 .style {
-  display: none;
+  /*display: none;*/
 }
 
 .aboutme {
@@ -61,7 +60,7 @@ h2 {
 }
 
 .intro {
-  /*display: none;*/
+  display: none;
 }
 
 #style:hover {
