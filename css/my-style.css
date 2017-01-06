@@ -49,14 +49,48 @@ h2 {
   max-height:500px;
   padding: 20px;
   border: 20px solid #5FC4AB;
+  -webkit-animation:spin 1s linear;
+  -moz-animation:spin 1s linear;
+  animation:spin 1s linear;
+  -webkit-animation-fill-mode:forwards;
 }
 
+
+@-moz-keyframes spin {
+	100% {
+    -moz-transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotateX(360deg);
+  }
+}
+@keyframes spin {
+  20% { -webkit-transform: rotateY(60deg); transform:rotate(60deg);
+  z-index: 2;
+  padding: 2%;
+  z-index: 200;
+
+ }
+  50% { -webkit-transform: rotateX(160deg); transform:rotate(160deg);
+  z-index: 200;
+  margin: -2px;
+  border: 5px ridge #5FC4AB;
+ }
+ 100% { -webkit-transform: rotateX(3600deg); transform:rotate(360deg);
+ z-index: 200;
+}
+}
+
+
 .style {
-  /*display: none;*/
+  display: none;
 }
 
 .aboutme {
-  display: none;
+  /*display: none;*/
 }
 
 .intro {
@@ -89,7 +123,7 @@ h2 {
 }
 
 .row {
-  padding: 20px;
+  /*padding: 20px;*/
 }
 .navbar .nav li a,#style{
   background-color: #5FC4AB;

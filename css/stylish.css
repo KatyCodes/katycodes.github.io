@@ -26,7 +26,7 @@
 }
 
 .rw-words span{
-	position: absolute;
+	position: relative;
 	opacity: 0;
 	overflow: hidden;
 	width: 100%;
@@ -39,104 +39,130 @@
 	padding-top: 100px;
 	display: block;
 }
-
-body > div > div.style > section > h2 > div.rw-words.rw-words-3 > span > h4 {
-	position: relative;
-    top: 50%;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-	font-size: 20px;
-	color: black;
-}
-
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 16em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: black;}
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
 .rw-words-1 span{
 	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 1s; /* Firefox < 16 */
-	-ms-animation: fadein 1s; /* Internet Explorer */
-	-o-animation: fadein 1s; /* Opera < 12.1 */
 	animation: fadein 1s;
 	-webkit-animation-fill-mode:forwards;
 	margin-left: -20px !important;
 }
-.rw-words-2 span{
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera < 12.1 */
-	animation: fadein 2s;
+.rw-words-2 p{
+	-webkit-animation: slide-right 2s; /* Safari, Chrome and Opera > 12.1 */
+	animation: slide-right 4s;
 	-webkit-animation-fill-mode:forwards;
-	animation-delay: 1s;
-}
-.rw-words-3 span{
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera < 12.1 */
-	animation: fadein 2s;
-	-webkit-animation-fill-mode:forwards;
-	animation-delay: 2s;
+	overflow: hidden;
+	color: #5FC4AB;
+	text-decoration: underline;
 }
 
-.rw-words-4 span{
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera < 12.1 */
-	animation: fadein 2s;
-	-webkit-animation-fill-mode:forwards;
-	animation-delay: 5s;
-	font-size: 50%;
-	margin-top: 130px;
-	margin: auto;
-}
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes slide-right {
+	0% {
+	font-size: 0%;
+	opacity: 0;
+	}
+  5% {
+  margin-left: 25%;
+	font-size: 45%;
+  }
+  75% {
+  margin-right: 0%;
+	margin-left: 35%;
+	font-size: 100%;
+  }
+	100% {
+	font-size: 100%;
+	}
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+			opacity: 0;
+		}
+    to   {
+			opacity: 1;
+		}
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+
+/*typewriter stye "blur the line.."*/
+body > div > div.style > section > h2 > div.rw-words.rw-words-3 > span > h4 {
+	position: relative;
+	top: 70%;
+	width: 24em;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255,255,255,.75);
+	font-size: 180%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color:  black;
+	text-shadow: 0px 2px 10px #5FC4AB;
+	margin-top: 80px;
+	animation-delay: 3s;
+}
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 26em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: transparent;}
+	 /*make black once you remove the coming soon part!*/
+  to{border-right-color: transparent;}
+}
+@keyframes blink-caret {
+  from, to { border-color: black; }
+  50% { border-color: black; }
+}
+/*coming soon       */
+body > div > div.style > section > h5 {
+	position: relative;
+  bottom: 100%;
+  width: 20em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 80%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+	animation-delay: 7s;
+	margin-top: 150px;
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.anim-typewriter2{
+  animation: typewriter2 4s steps(30) .2s 1 normal both,
+  blinkTextCursor2 500ms steps(44) infinite normal;
 }
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor2{
+  from{
+		border-right-color: rgba(255,255,255,.75);
+	}
+  to{
+		border-right-color: black;
+	}
+}
+@keyframes blink-caret {
+  from, to {
+		border-color: black
+	}
+  50% {
+		border-color: black;
+	}
+}
+/*end of typewriter*/
