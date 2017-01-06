@@ -86,7 +86,7 @@ h2 {
 
 
 .style {
-  display: none;
+  /*display: none;*/
 }
 
 .aboutme {
@@ -94,7 +94,7 @@ h2 {
 }
 
 .intro {
-  display: none;
+  /*display: none;*/
 }
 
 #style:hover {
