@@ -43,7 +43,7 @@ h2 {
   min-width: 700px;
   padding: 50px;
 }
-
+/*
 #img2 {
   float: right;
   max-height:500px;
@@ -82,7 +82,7 @@ h2 {
  100% { -webkit-transform: rotateX(3600deg); transform:rotate(360deg);
  z-index: 200;
 }
-}
+}*/
 
 
 .style {
