@@ -43,19 +43,19 @@ h2 {
   min-width: 700px;
   padding: 50px;
 }
-/*
+
 #img2 {
   float: right;
   max-height:500px;
   padding: 20px;
   border: 20px solid #5FC4AB;
-  -webkit-animation:spin 1s linear;
+  /*-webkit-animation:spin 1s linear;
   -moz-animation:spin 1s linear;
   animation:spin 1s linear;
-  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-fill-mode:forwards;*/
 }
 
-
+/*
 @-moz-keyframes spin {
 	100% {
     -moz-transform: rotateX(360deg);
