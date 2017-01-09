@@ -113,6 +113,12 @@ h2 {
 .container-fluid {
   font-family: monospace;
   max-width: 1500px;
+  background-color: #5FC4AB;
+
+}
+
+body > div > div.navbar.navbar-default.top-nav > div.container-fluid > a {
+  display: none;
 }
 .col-sm-4 {
   border: 2px solid black!important;
