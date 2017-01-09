@@ -11,7 +11,11 @@ h1 img {
   border: 2px solid $('.style').show("slow");
   max-height: 600px;
   padding: 2px;
+}
 
+.intro {
+  text-align: center;
+  
 }
 
 p {
