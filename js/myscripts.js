@@ -17,6 +17,6 @@ $(document).ready(function(){
     $('.intro').hide("slow");
     $('.style').show("slow");
     $('.aboutme').hide("slow");
-    $('#style').css('background-color', '#F8F8F8')
+    $('.style').css('background-color', '#F8F8F8')
   });
 });
