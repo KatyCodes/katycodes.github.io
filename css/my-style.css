@@ -1,3 +1,4 @@
+
 h1 {
   font-family:monospace!important;
 }
@@ -78,6 +79,12 @@ h2 {
   padding: 20px;
 }
 
+#avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: -10%;
+    width: 100%;
+}
 
 #profile {
   max-height: 700px;
@@ -101,8 +108,4 @@ h2 {
   max-height:500px;
   padding: 20px;
   border: 20px solid #5FC4AB;
-  /*-webkit-animation:spin 1s linear;
-  -moz-animation:spin 1s linear;
-  animation:spin 1s linear;
-  -webkit-animation-fill-mode:forwards;*/
 }
