@@ -1,7 +1,9 @@
+$("div h3").siblings().hide();
+
 $(document).ready(function(){
- //  var i = 1
- //   var timer = setInterval(function() { $('.katy').slideToggle()
- // }, 2000);
+  //  var i = 1
+  //   var timer = setInterval(function() { $('.katy').slideToggle()
+  // }, 2000);
   // $('.katy').fadeToggle("slow");
     $('#about').click(function(){
     $('.aboutme').show("slow");
@@ -19,4 +21,10 @@ $(document).ready(function(){
     $('.aboutme').hide("slow");
     $('.style').css('background-color', '#F8F8F8')
   });
+
+  $("div > h3").click(function() {
+    $(this).siblings().slideToggle("slow");
+    $(this).find("span").toggleClass("glyphicon glyphicon-remove")
+  });
+
 });
