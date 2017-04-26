@@ -57,6 +57,24 @@ h2 {
   font-family: monospace;
 }
 
+body > div > div.resume > div.skills {
+    max-height: 300px;
+    list-style-position: inside;
+  }
+
+body > div.background-image > div.resume > div > h3 span {
+  font-size: 12px;
+}
+
+body > div > div.resume > div.skills.resume-fold > ul {
+  /*height: 100px;*/
+  columns: 3;
+}
+
+body > div.background-image > div.resume > div > h3 {
+  text-decoration: underline;
+}
+
 .container-fluid {
   font-family: monospace;
   max-width: 1500px;
