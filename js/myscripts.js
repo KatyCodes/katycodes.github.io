@@ -1,14 +1,10 @@
-$("div h3").siblings().hide();
+$(".resume-fold h3").siblings().hide();
 
 $(document).ready(function(){
-  //  var i = 1
-  //   var timer = setInterval(function() { $('.katy').slideToggle()
-  // }, 2000);
-  // $('.katy').fadeToggle("slow");
     $('#about').click(function(){
     $('.aboutme').show("slow");
     $('.intro').hide("slow");
-    $('.style').hide("slow");
+    $('.resume').hide("slow");
   });
   $('#home').click(function(){
     $('.intro').show("slow");
@@ -22,9 +18,21 @@ $(document).ready(function(){
     $('.style').css('background-color', '#F8F8F8')
   });
 
-  $("div > h3").click(function() {
+  $('#resume-btn').click(function(){
+    $('.intro').hide("slow");
+    $('.resume').show("slow");
+    $('.aboutme').hide("slow");
+  });
+
+  $(".resume-fold > h3").click(function() {
     $(this).siblings().slideToggle("slow");
-    $(this).find("span").toggleClass("glyphicon glyphicon-remove")
+      if($(this).find("span").hasClass('glyphicon glyphicon-chevron-down')){
+        $(this).find("span").addClass("glyphicon glyphicon-remove");
+        $(this).find("span").removeClass("glyphicon-chevron-down");
+    } else {
+        $(this).find("span").addClass('glyphicon glyphicon-chevron-down');
+        $(this).find("span").removeClass("glyphicon-remove");
+    }
   });
 
 });
