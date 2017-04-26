@@ -1,4 +1,6 @@
-
+div > h3*  {
+	color: red;
+}
 .rw-wrapper{
 	width: 70%;
 	position: relative;
@@ -26,9 +28,10 @@
 	text-indent: 10px;
 }
 
-.rw-words span, {
+.rw-words > span {
 	position: relative;
 	opacity: 0;
+	top: -20px;
 	overflow: hidden;
 	width: 100%;
 	color: #5FC4AB;
@@ -43,11 +46,12 @@
   color: #5FC4AB;
 }
 
-.rw-words-1 span{
-	/*animation: fadein 1s;
+.rw-words-1 > span {
+	animation: fadein 1s;
 	-webkit-animation-fill-mode:forwards;
 	margin-left: -20px !important;
-  animation-delay: 2s;*/
+  animation-delay: 2s;
+
 }
 
 body > div > div.style > section > h2 > div.rw-words.rw-words-3 > p {
@@ -58,8 +62,10 @@ body > div > div.style > section > h2 > div.rw-words.rw-words-3 > p {
 }
 
 
-
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+	0% { opacity: 0; animation-timing-function: ease-in; height: 0px; }
+  8% { opacity: .6; top: -10px; }
+  19% { opacity: .8; top: -5px; }
+	25% { opacity: 1; top: 0px; }
+  100% { opacity: 1; top: 0px;}
 }
