@@ -57,6 +57,10 @@ h2 {
   font-family: monospace;
 }
 
+.resume {
+  padding: 10px;
+}
+
 body > div > div.resume > div.skills {
     max-height: 300px;
     list-style-position: inside;
