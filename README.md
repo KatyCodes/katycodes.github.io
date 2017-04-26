@@ -1,6 +1,6 @@
 # _My Portfolio_
 
-#### _This is a website for my portfolio, August 5th, 2016_
+#### _This is a website for my portfolio, April 26th, 2017_
 
 #### By _**Katy Henning**_
 
@@ -23,7 +23,7 @@ _If you have questions please contact me directly at katyannhenning@gmail.com_
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap_
+
 
 ### License
 

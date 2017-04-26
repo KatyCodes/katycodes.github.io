@@ -44,11 +44,7 @@ h2 {
   text-align: center;
 }
 
-.style {
-  display: none;
-}
-
-.aboutme {
+.aboutme, .style, .resume  {
   display: none;
 }
 
